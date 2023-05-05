@@ -26,7 +26,7 @@ const BlogDetail = () => {
             if(data?.success){
                 setBlogs(data?.blog)
                 setInputs({title:data?.blog.title,description:data?.blog.description,image:data?.blog.image})
-  
+                
               }else{
                 toast.error(data.message)
             }
@@ -35,7 +35,7 @@ const BlogDetail = () => {
             console.log(error)
         }
     }
-  
+    console.log(blogs)
     useEffect(() => {
       getBlogs()
       //eslint-disable-next-line
