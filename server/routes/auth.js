@@ -1,6 +1,6 @@
 const express = require("express");
-const { registerUser, loginUser, getUsers } = require("../controllers/UserController");
-const {register,login} =require("../validation/validation.js")
+const { registerUser, loginUser, getUsers } = require("../controllers/userController")
+const {register,login} =require("../validation/validation.js");
 const fetchuser = require("../middleware/fetchuser");
 
 //router object
