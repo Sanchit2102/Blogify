@@ -13,7 +13,7 @@ const BlogDetail = () => {
     const getBlogs =async()=>{
         try {
             const response = await fetch(
-                `/api/v1/blog/get-blog/${id}`,
+                `http://localhost:3001/api/v1/blog/get-blog/${id}`,
                 {
                   method: "GET",
                   headers: {

@@ -18,7 +18,7 @@ const CreateBlog = () => {
     try {
       // API Call  with fetch headers
       const response = await fetch(
-        "/api/v1/blog/create-blog",
+        "http://localhost:3001/api/v1/blog/create-blog",
         {
           method: "POST",
           headers: {

@@ -19,7 +19,7 @@ const handleLogout =()=>{
   return (
     <>
          <header>
-    <div className="logo"><i class="fa-sharp fa-solid fa-pen-nib"></i> Blogify</div>
+    <div className="logo"><i className="fa-sharp fa-solid fa-pen-nib"></i> Blogify</div>
     <div className="hamburger" onClick={hamburger}>
       <div className="line"></div>
       <div className="line"></div>

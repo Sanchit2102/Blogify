@@ -13,6 +13,7 @@ import  { Toaster } from 'react-hot-toast';
 function App() {
   return (
   <> 
+  <div className="app">
   <Header/>
   <Toaster autoClose={3000}/>
   <Routes>
@@ -24,6 +25,8 @@ function App() {
 <Route path="/signup" element={<Signup/>}/>
   </Routes>
    
+  </div>
+ 
   </>
   );
 }

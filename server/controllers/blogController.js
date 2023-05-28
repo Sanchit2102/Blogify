@@ -69,7 +69,6 @@ exports.createBlogController = async (req, res) => {
 };
 
 exports.updateBlogController = async (req, res) => {
-  const { title, description, image, } = req.body; 
   try {
     const{id} = req.params
     const {title,description,image}=req.body;
@@ -90,7 +89,6 @@ exports.updateBlogController = async (req, res) => {
 exports.getBlogByIdController = async(req,res) => {
     try {
         const {id} = req.params;
-        const {title,description,image}=req.body;
         
         const blog = await Blog.findById(id)
         if(!blog){

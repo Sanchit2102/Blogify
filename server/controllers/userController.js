@@ -47,7 +47,9 @@ exports.registerUser = async (req, res) => {
         id: user.id,
       },
     };
-    const authtoken =await jwt.sign(data, JWT_SECRET); //send data and secret
+    
+    //send data and secret in the form of authtoken
+    const authtoken =await jwt.sign(data, JWT_SECRET); 
     success = true;
     res.status(200).send({ success, message: "User created successfully", authtoken,user });
   } catch (error) {
